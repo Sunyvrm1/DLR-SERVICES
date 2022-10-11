@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/dist/css/style.css">
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+        @layer components {
+            .nav-active {
+                @apply px-[20px] py-[10px] rounded-md bg-colorl font-bold text-white
+          }
+            .nav {
+                    @apply px-[20px] py-[10px] rounded-md font-bold text-[#11111199] hover:bg-colorl hover:text-white duration-300
+        }
+            
+        }
+
+
+
+
+      </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                colord: '#02428f',
+                colorl: '#2e6bb4',
+              }
+            },
+            fontFamily: {
+              sans1: ['cairo', 'sans-serif'],
+              sans2: ['source-sans-pro', 'sans-serif'],
+            }
+          }
+        }
+      </script>
+
+
+</head>
+<body>
+    
+    <div class="header1">
+
+<!-- topbar starts -->
+
+    <div class="topbar">
+        <p class="para2">Call us today <a href="tel:+61415007054">0415 007 054</a></p>
+    </div>
+
+<!-- topbar ends -->
+
+
+<!-- Header starts -->
+
+    <header>
+        <div class="header-cont-width" style="box-shadow: rgb(0 0 0 / 25%) 0 3px 11px 0;">
+        <div class="header-container width-70 py-5 grid grid-cols-2">
+            <div class="header-item header-item2">
+                <a href=""><p class="text-[40px] font-sans1 font-bold">
+                    <span class="text-colord">DLR</span> <span class="text-colorl">SERVICES</span></p>
+                </a>
+            </div>
+            <div class="header-item h-[100%] flex justify-end header-item1">
+              <a href="#" class="hamburger"><i class="fa-solid fa-bars"></i></a>
+                <ul class="h-[100%] flex gap-5 items-center">
+                    <li class="nav-active"><a href="#">Home</a></li>
+                    <li class="nav"><a href="#">Services</a></li>
+                    <li class="nav"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-nav-hamburger">
+    <div class="mobile-nav">
+      <ul class="mobile-nav-list">
+          <li class="nav-active"><a href="#">Home</a></li>
+          <li class="nav"><a href="#">Services</a></li>
+          <li class="nav"><a href="#">Contact</a></li>
+      </ul>
+  </div>
+</div>
+
+
+    </header>
+
+<!-- Header ends -->
+
+    </div>
+
+
+<!-- for mobile -->
+
+<div class="mobile-cta mobile-cta1">
+  <button class="btn1"><i class="fa-solid fa-phone"></i>Call Now</button>
+</div>
+
+<!-- for mobile -->
+
+
+<!-- Banner starts -->
+
+    <div class="container-banner-width">
+        <div class="banner-container width-70">
+            <div class="banner-text px-[20px] pt-[30px] pb-[60px] w-[40%] flex justify-center items-center flex-col">
+                <h1 class="heading1 font-bold text-center">H1 WITH KEYWORD IN BLACKTOWN</h1>
+                <button class="btn1 mt-[15px]"><a href="#">Contact</a></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner-container1 w-12/12">
+      <div class="banner-text px-[20px] pt-[30px] pb-[60px] flex justify-center items-center flex-col">
+          <h1 class="heading1 font-bold text-center">H1 WITH KEYWORD IN BLACKTOWN</h1>
+          <button class="btn1 mt-[15px]"><a href="#">Contact</a></button>
+      </div>
+  </div>
+
+
+<!-- Banner ends -->
+
+
+<!-- text area1 starts-->
+
+    <div class="text-area-cont width-70">
+      <div class="text-area-item">
+        <img src="/dist/images/drop.png" alt="">
+      </div>
+      <div class="text-area-item">
+        <p class="para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div class="text-area-item">
+        <button class="btn1">Services</button>
+      </div>
+    </div>
+
+<!-- text area1 ends-->
+
+
+<!-- text-media1 starts -->
+
+    <div class="tm-cont width-70">
+      <div class="tm-item tm-item1">
+        
+      </div>
+      <div class="tm-item tm-item2">
+        <h2 class="heading2">Heading 1</h2>
+        <p class="para1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.</p>
+        <button class="btn1">Know More</button>
+      </div>
+    </div>
+
+<!-- text-media1 ends -->
+
+
+<!-- pods starts -->
+
+    <div class="pods-container width-70">
+      <div class="pods-item">
+        <img src="/dist/images/pod1.jpg" alt="">
+        <div class="pods-text">
+          <h2 class="heading2">Heading 2</h2>
+          <p class="para1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+
+      </div>
+      <div class="pods-item">
+        <img src="/dist/images/pod2.jpg" alt="">
+        <div class="pods-text">
+          <h2 class="heading2">Heading 3</h2>
+          <p class="para1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </div>
+    </div>
+
+<!-- pods ends -->
+
+
+<!-- CTA starts -->
+
+    <div class="cta-cont-width">
+      <i class="fa-solid fa-square-phone"></i>
+      <p class="cta-para">Call to action with Benefit</p>
+      <button class="btn1">Request a call back</button>
+    </div>
+
+<!-- CTA ends -->
+
+<!-- for mobile -->
+
+    <div class="mobile-cta">
+      <button class="btn1"><i class="fa-solid fa-phone"></i>Call Now</button>
+    </div>
+
+<!-- for mobile -->
+
+<!-- footer starts -->
+
+    <div class="footer-container width-70">
+      <div class="header-item2">
+        <a href=""><p class="text-[40px] font-sans1 font-bold text-center mb-[35px]">
+            <span class="text-colord">DLR</span> <span class="text-colorl">SERVICES</span></p>
+        </a>
+    </div>
+    <div class="footer-text">
+      <div class="footer-item">
+        <h3 class="f-text">Find Us</h3>
+        <p class="para1">Blacktown, 29 Leonard St,<br>2148, NSW, Australia</p>
+      </div>
+      <div class="footer-item">
+        <h3 class="f-text">Contact Us</h3>
+        <p class="para1 font-bold">0415 007 054</p>
+        <p class="para1 font-bold">dlrservices@gmail.com</p>
+      </div>
+      <div class="footer-item">
+        <h3 class="f-text">ABN/ACN</h3>
+        <p class="para1">33051775556</p>
+      </div>
+    </div>
+    </div>
+
+<!-- footer ends -->
+
+
+
+<script src="/dist/js/script.js"></script>
+<script src="https://kit.fontawesome.com/9ba24a9f81.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
